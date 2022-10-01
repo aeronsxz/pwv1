@@ -1,0 +1,430 @@
+@import url('../css/fonts.css');
+
+/* --open-- THE BODY --open-- */ 
+
+html, body {
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* --close-- THE BODY --close-- */ 
+
+/*------------------------------------------*/
+
+:root{
+       /* Color Family */ 
+        --aqua: #0dbff5; 
+        --aqua1: #16b2f0;
+        --blackk: #363535;
+        --whitee: #ffffff;
+        --light: #020000;
+        --bluee: #768bf3;
+
+       /* Gradient Family */
+       --theme: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+       --maintheme: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+       --theme1: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+       --btntheme: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+       --btntheme1: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+
+
+       /* Font Family */
+
+       --Abel:'Abel', cursive;
+       --Cairo:'Cairo', cursive;
+       --Livvic:'Livvic', cursive;
+       --Lobster:'Lobster', cursive;
+       
+}
+
+/*--------------------------------------------*/ 
+
+/* --open-- GLOBAL CLASSES --open-- */ 
+
+a{
+    text-decoration: none;
+    color:var(--light);
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+ul{
+    list-style-type: none;
+}
+
+h1{
+    font-family: var(--Livvic);
+    font-size: 2.5rem;
+}
+
+h2{
+    font-family: var(--Lobster);
+    font-size: 1.5rem;
+}
+h3{
+    font-family: var(--Livvic);
+    font-size: 1.5rem;
+    color: var(--light);
+}
+
+button.btn{
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-family: var(--Livvic);
+    cursor: pointer;
+}
+
+span{
+    font-family: var(--Cairo);
+}
+
+.container{
+    margin: 0 5vw;
+}
+.text-gray{
+    color: var(--blackk);
+}
+p{
+    font-family: var(--Livvic);
+}
+.mtitle{
+    font-size: 1.5rem;
+    font-family: var(--Cairo);
+}
+
+img{
+    width: 85%;
+}
+
+/* --close-- GLOBAL CLASSES --close-- */ 
+.nav{
+    background: var(--whitee);
+    padding: 0 1.5rem;
+    height: 0rem;
+    min-height: 10vh;
+    overflow: hidden;
+    transition: height .7s ease-in-out;
+}
+.nav .nav-menu{
+    justify-content: space-between;    
+}
+.nav .logo{
+    float: left;
+    width: 10rem;
+    height: 7vh;
+}
+.nav .toggle-collapse{
+    position: absolute;
+    top: 0%;
+    width: 90%;
+    cursor: pointer;
+    display: none;
+}
+.nav .toggle-collapse .toggle-icons{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+}
+.nav .toggle-collapse .toggle-icons i{
+    font-size: 1.5rem;
+    color: var(--light);
+}
+.collapse{
+    height: 17rem;
+}
+.nav .nav-items{
+    display: flex;
+    margin: 0;
+}
+.nav .nav-items .nav-link{
+    padding: 1.6rem 1rem;
+    font-size: 1.1rem;
+    position: relative;
+    font-family: var(--Cairo);
+}
+.nav .nav-items .nav-link:hover{
+    background-color:var(--aqua1);
+}
+.nav .nav-brand a{
+    font-size: 1.7rem;
+    padding: 1rem 0;
+    display: block;
+    font-family: var(--Lobster);
+    font-size: 1.5rem;
+}
+.nav .social {
+    padding: 1.5rem 0;
+}
+.nav .social i{
+    padding: 0 .3rem;
+}
+.nav .social i:hover{
+    color: var(--aqua1);
+}
+
+
+
+                                            /*  MAIN CONTENT ABOUT ME CSS */
+
+
+
+                        /*  MAIN CONTENT ABOUT ME CSS */
+
+                main .aboutme-site-content{
+                    display: grid;
+                    grid-template-columns: 60% 40%;
+                    padding: 0 2rem;
+                }
+
+                main .aboutme-post-content{
+                    width: 100%;
+                    margin-bottom: 5rem;
+                }
+
+                main .aboutme-site-content .aboutme-post-content > .aboutme-post-images .aboutme-post-info .pp{
+                    background: var(--light);
+                    color: var(--aqua1);
+                    font-size: 1.3rem;
+                    padding: 1rem;
+                    position: absolute;
+                }
+
+                main .aboutme-site-content .aboutme-post-content > .aboutme-post-images, .aboutme-post-tile{
+                    padding: 3rem 2rem;
+                    position: relative;
+                }
+
+                main .aboutme-site-content .aboutme-post-content > .aboutme-post-images .img{
+                    
+                    transition: all 2s ease;
+                }
+
+                main .aboutme-site-content .aboutme-post-content > .aboutme-post-images .img:hover{
+                    transform: scale(1.3);
+                }
+
+
+                /*  Personal Information */ 
+                .aboutme-site-content > .sidebar .padd{
+                    padding: 0 5rem;
+                }
+
+                .aboutme-site-content > .sidebar .information-list{
+                    font-family: var(--Abel);
+                }
+
+                .aboutme-site-content > .sidebar .information-list .information-items{
+                                background: var(--btntheme);
+                                padding: .4rem 1rem;
+                                margin: .8rem 0;
+                                border-radius: 3rem;
+                                width: 90%;
+                                display: flex;
+                                justify-content: space-between;
+                }
+                .aboutme-site-content > .sidebar .information-list .information-items:hover{
+                    background: var(--whitee);
+                    color: var(--aqua1);
+                }
+
+                .aboutme-site-content > .sidebar .information-list .information-items a{
+                    font-size: 1.5rem;
+                    color: var(--light);
+                }
+
+                .aboutme-site-content > .sidebar .skills{
+                    padding-top: 3rem;
+                }
+
+                .aboutme-site-content > .sidebar h2{
+                    padding-bottom: 3rem;
+                    
+                }
+                .box{
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                }
+
+                .box li{
+                    margin-bottom: 50px;
+                    height: 35px;
+                }
+
+                .box li b{
+                    position: relative;
+                    top: -40px;
+                    font-size: 20px;
+                }
+
+                .line{
+                    height: 5px;
+                    margin: 2px 0;
+                    background: var(--btntheme);
+                    position: absolute;
+                }
+
+                .box1{
+                    width: 50%;
+                }
+                .box2{
+                    width: 55%;
+                }
+                .box3{
+                    width: 60%;
+                }
+                .box4{
+                    width: 65%;
+                }
+
+                .aboutme-site-content .sidebar .popular-post .post-content{
+                    padding: 1rem 0;
+                }
+
+                .aboutme-site-content .sidebar .popular-post h2{
+                    padding-top: 8rem;
+                }
+
+                .aboutme-site-content .sidebar .popular-post a{
+                    background: var(--btntheme);
+                    padding: .3rem 1rem;
+                    margin: .8rem 0;
+                    border-radius: none;
+                    font-size: 1.5rem;
+                    width: 90%;
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                .aboutme-site-content .sidebar .popular-post a:hover{
+                    background: var(--whitee);
+                    color: var(--aqua1);
+                }
+
+                .aboutme-site-content .sidebar .popular-post .school{
+                    font-family: var(--Abel);
+                }
+
+
+                .aboutme-post-info{
+                    display: none;
+                }   
+
+                .aboutme-post-content{
+                    width: 100%;
+                }
+
+                .pp{
+                    padding: 0px 30px 20px;
+                    font-family: var(--Cairo);
+                    font-size: 13px;
+                    color: var(--blackk);
+                    line-height: 24px;
+                    text-align: left;
+                    padding-right: 1rem;
+                    position: relative;
+                }
+
+                .quote{
+                    text-align: right;
+                    padding-right: 1rem;
+                    position: relative;
+                    font-size: 15px;
+                }
+
+
+                @media only screen and (max-width: 750px){
+                    .nav .nav-menu, .nav .nav-items{
+                        flex-direction: column;
+                    }
+                    .nav .toggle-collapse{
+                        display: initial;
+                    }
+                    
+                    main .aboutme-site-content{
+                        grid-template-columns: 100%;
+                    }
+                }
+
+                @media only screen and (min-width: 375px) {
+                    .aboutme-posts .aboutme-post-images{
+                        width: 100%;
+                    }
+
+                }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   /* -------------------------------------FOOTER--------------------------------------*/
+
+
+footer.footer{
+    height: 100%;
+    background: var(--aqua);
+    position: relative;
+}
+footer.footer .container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+footer.footer .container > div{
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 3rem .9rem;
+}
+footer.footer .container .loc{
+    height: 20rem;
+    width: 30rem;
+}
+
+footer.footer .follow div i{
+    color: black;
+    padding: 0 .5rem;
+}
+footer.footer .follow div i:hover{
+    color: var(--whitee);
+    cursor: pointer;
+}
+footer.footer .rights{
+    justify-content: center;
+    font-family: var(--Abel);
+}
+footer.footer .move-up{
+    position: absolute;
+    right: 6%;
+    top: 50%;
+}
+footer.footer .move-up span{
+    color: var(--light);
+}
+footer.footer .move-up span:hover{
+    color: var(--whitee);
+    cursor: pointer;
+}
+
+/* -------------------xx------------------FOOTER--------------------xx------------------*/

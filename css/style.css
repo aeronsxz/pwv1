@@ -1,0 +1,180 @@
+@import url('../css/fonts.css');
+
+/* --open-- THE BODY --open-- */ 
+
+html, body {
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* --close-- THE BODY --close-- */ 
+
+/*------------------------------------------*/
+
+:root{
+       /* Color Family */ 
+        --aqua: #0dbff5; 
+        --aqua1: #16b2f0;
+        --blackk: #363535;
+        --whitee: #ffffff;
+        --light: #020000;
+        --bluee: #768bf3;
+        --dark: #06014e;
+        --orange: #ff9900;
+
+       /* Gradient Family */
+       --theme: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+       --maintheme: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+       --theme1: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+       --btntheme: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+       --btntheme1: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+
+
+       /* Font Family */
+
+       --Abel:'Abel', cursive;
+       --Cairo:'Cairo', cursive;
+       --Livvic:'Livvic', cursive;
+       --Lobster:'Lobster', cursive;
+       
+}
+
+/*--------------------------------------------*/ 
+
+/* --open-- GLOBAL CLASSES --open-- */ 
+
+a{
+    text-decoration: none;
+    color:var(--light);
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+ul{
+    list-style-type: none;
+}
+
+h1{
+    font-family: var(--Livvic);
+    font-size: 4rem;
+}
+
+h2{
+    font-family: var(--Lobster);
+    font-size: 1.5rem;
+}
+h3{
+    font-family: var(--Livvic);
+    font-size: 1.5rem;
+}
+
+button.btn{
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-family: var(--Livvic);
+    cursor: pointer;
+}
+
+span{
+    font-family: var(--Cairo);
+}
+
+.container{
+    margin: 0 5vw;
+}
+.text-gray{
+    color: var(--blackk);
+}
+p{
+    font-family: var(--Livvic);
+}
+.mtitle{
+    font-size: 1.5rem;
+    font-family: var(--Cairo);
+}
+
+
+/* --- CAROUSEL THEME --- */
+
+                main{
+                    background-image: url(../Digitex/bg.png);
+                }
+                   main .Test{
+                    color: var(--orange);
+                    font-size: 6vh;
+                    text-align: center;
+                    margin-top: 4vh;
+                    padding-top: 10vh;
+                }
+        
+                main .blog-post{
+                    padding-top: 6rem;
+                }
+        
+                main .blog-post .blog-content{
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    width: 90%;
+                    margin: 3rem 2rem;
+                    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+                    background-color: #b7b2fc;  
+                }
+        
+                main .blog-content .blog-title{
+                    padding: 2rem 0;
+                }
+        
+                main .blog-content .btn-blog{
+                    padding: .7rem 2rem;
+                    background: var(--orange);
+                    color: var(--dark);
+                    margin: .5rem;
+                }
+
+                main .blog-content img:hover{
+                    transform: scale(1.2);
+                }
+        
+                main .blog-content .btn-blog:hover{
+                    background: transparent;
+                    border: 1px solid var(--orange);
+                    color: var(--whitee);
+                }
+        
+                main .blog-content span{
+                    display: block;
+                }
+        
+                section .container .owl-nav{
+                    position: absolute;
+                    top: 0%;
+                    margin: 0 auto;
+                    width: 100%;
+                }
+        
+                .owl-nav .owl-prev .owl-nav-prev,.owl-nav .owl-next .owl-nav-next{
+                    color: var(--light);
+                    background: transparent;
+                    font-size: 2rem;
+                }
+        
+                .owl-theme .owl-nav [class *='owl-']:hover{
+                    background: transparent;
+                    color: var(--aqua);
+                }
+        
+                .owl-theme .owl-nav [class *='owl-']{
+                    outline: none;
+                }
+
+                
+        
+        
+                                    /* --x-- CAROUSEL THEME --x-- */
+        
